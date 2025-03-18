@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bg color changer</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            background-color: rgb(112, 205, 239)
+        }
+        button{
+            height: 40px;
+            width: 80px;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <button id="red" onclick="changeBG(this)" style="background-color: red;">Red</button>
+    <button id="yellow" onclick="changeBG(this)" style="background-color: yellow;">Yellow</button>
+    <button id="black" onclick="changeBG(this)" style="background-color: black;">Black</button>
+    <button id="purple" onclick="changeBG(this)" style="background-color: purple;">Purple</button>
+    <button id="green" onclick="changeBG(this)" style="background-color: green;">Green</button>
+    <button id="blue" onclick="changeBG(this)" style="background-color: blue;">Blue</button>
+    <button id="default" onclick="changeBG(this)" style="background-color: rgb(112, 205, 239);">Default</button>
+</body>
+<script>
+    function changeBG(button){
+        let body = document.querySelector("body")
+        body.style.backgroundColor = button.style.backgroundColor
+    }
+</script>
+</html>
