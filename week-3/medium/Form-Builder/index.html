@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form builder</title>
+    <style>
+        body{
+            margin: 0;padding: 0;box-sizing: border-box;
+            background-color: #FFF0BD;
+        }
+        #form-builder, #form-preview{
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            background-color: #F8F3D9;
+        }
+        h1{
+            margin-top: 0px;
+        }
+        input[type="text"]{
+            height: 25px;
+            width: 200px;
+        }
+        button{
+            display: block;
+            margin-top: 20px;
+            font-size: 17px;
+            height: 35px;
+            width: 100px;
+            border-radius: 5px;
+            background-color: aquamarine;
+        }
+        #form-preview label, h3{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="form-builder">
+        <h1>Form Builder</h1>
+        <h2>Field Type</h2>
+        <select id="inputType" aria-label="Select Type">
+            <option value="h3">H3</option>
+            <option value="input">Input</option>
+            <option value="radio">Radio</option>
+        </select>
+        <h3>Field Label</h3>
+        <input type="text" id="inputValue" placeholder="Add field value">
+        <h3>Placeholder (for input)</h3>
+        <input type="text" id="placeholderValue" placeholder="Enter placeholder (optional)">
+        <button onclick="add()">Add</button>
+    </div>
+
+    <div id="form-preview">
+        <h1>Form Preview</h1>
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
